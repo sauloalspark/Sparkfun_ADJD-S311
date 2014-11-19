@@ -1,8 +1,9 @@
 #ifndef ADJDS311_h
 #define ADJDS311_h
 
-#include <Arduino.h>
-#include <Wire.h>
+//#include <Arduino.h>
+//#include <Wire.h>
+#include "application.h"
 
 // ADJD-S311's I2C address, don't change
 #define ADJD_S311_ADDRESS 0x74
