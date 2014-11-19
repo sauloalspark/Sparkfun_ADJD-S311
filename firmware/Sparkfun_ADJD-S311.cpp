@@ -1,4 +1,4 @@
-#include <Arduino.h>
+//#include <Arduino.h>
 #include "Sparkfun_ADJD-S311.h"
 
 ADJDS311::ADJDS311(int led_pin) {
