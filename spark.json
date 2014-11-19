@@ -1,7 +1,7 @@
 {
 	"name": "Sparkfun_ADJD-S311",
 	"author": "Saulo Aflitos",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"license": "BSD",
 	"description": "Spark Core library for the ADJD-S311 sensors"
 } 
