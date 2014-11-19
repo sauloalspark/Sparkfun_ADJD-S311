@@ -1,4 +1,4 @@
-#include <Sparkfun_ADJD-S311/Sparkfun_ADJD-S311.h>
+#include "Sparkfun_ADJD-S311/Sparkfun_ADJD-S311.h"
 #include <Wire.h>
 
 int sensorLed_pin = 2; //LED on the ADJDS-311
