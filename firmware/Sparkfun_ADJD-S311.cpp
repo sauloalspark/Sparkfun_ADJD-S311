@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <Sparkfun_ADJD-S311.h>
+#include "Sparkfun_ADJD-S311.h"
 
 ADJDS311::ADJDS311(int led_pin) {
     _led_pin = led_pin;
