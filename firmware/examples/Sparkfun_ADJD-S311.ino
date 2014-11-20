@@ -31,9 +31,9 @@ void loop(){
  
  Serial.print(map(color.red, 0, 1024, 0, 255));
  Serial.print(" | ");
- Serial.print(color.green, 0, 1024, 0, 255));
+ Serial.print(map(color.green, 0, 1024, 0, 255));
  Serial.print(" | ");
- Serial.print(color.blue, 0, 1024, 0, 255));
+ Serial.print(map(color.blue, 0, 1024, 0, 255));
  Serial.print(" | ");
  Serial.println(color.clear);
  
