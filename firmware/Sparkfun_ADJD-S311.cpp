@@ -23,10 +23,7 @@ void ADJDS311::ledOff(){
 }
 
 
-void ADJDS311::init(){
-    Serial.begin(9600);
-    Serial.print("init");
-    
+boolean ADJDS311::begin(){
     pinMode(_led_pin, OUTPUT); // Set the sensor's LED as output
     
     Wire.begin();
@@ -64,6 +61,8 @@ void ADJDS311::init(){
     writeRegister((unsigned char)((colorInt[GREEN] & 0x1FFF) >> 8), INT_GREEN_HI);
     writeRegister((unsigned char)colorInt[CLEAR], INT_CLEAR_LO);
     writeRegister((unsigned char)((colorInt[CLEAR] & 0x1FFF) >> 8), INT_CLEAR_HI);
+    
+    return true;
 }
 
 /* calibrateClear() - This function calibrates the clear integration registers
