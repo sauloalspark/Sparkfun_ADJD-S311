@@ -12,7 +12,13 @@ int bluePin = 6;
 void setup(){
  Serial.begin(9600);
  
- colorSensor.init();
+ if (colorSensor.begin()) {
+   Serial.println("Found sensor");
+ } else {
+  Serial.println("No ADJD-S311 found ... check your connections");
+  while (1); // halt!
+ }
+ 
  colorSensor.ledOn(); //turn LED on
  
  //Calibrate white 
