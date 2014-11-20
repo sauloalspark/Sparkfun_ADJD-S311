@@ -53,7 +53,7 @@ class ADJDS311{
  public:
 
   ADJDS311(int led_pin); // constructor
-  void init();
+  boolean begin();
   void calibrate();
   void ledOn();
   void ledOff();
