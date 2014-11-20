@@ -29,11 +29,11 @@ void setup(){
 void loop(){
  RGBC color = colorSensor.read(); //read the color
  
- Serial.print(color.red);
+ Serial.print(map(color.red, 0, 1024, 0, 255));
  Serial.print(" | ");
- Serial.print(color.green);
+ Serial.print(color.green, 0, 1024, 0, 255));
  Serial.print(" | ");
- Serial.print(color.blue);
+ Serial.print(color.blue, 0, 1024, 0, 255));
  Serial.print(" | ");
  Serial.println(color.clear);
  
